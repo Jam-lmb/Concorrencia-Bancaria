@@ -16,33 +16,35 @@ Este projeto tem como objetivo demonstrar na prática os problemas de concorrên
 5. Execute o projeto clicando em Run ou utilizando a linha de comando:
 ```./mvnw spring-boot:run ```
 
+```text
 concorrencia-bancaria/
 ├── src/
 │ ├── main/
-│ │ ├── java/
-│ │ │ └── com/
-│ │ │ └── example/
-│ │ │ └── bancaria/
-│ │ │ ├── controller/
-│ │ │ │ ├── ContaController.java
-│ │ │ │ └── ContaVersionadaController.java
-│ │ │ ├── service/
-│ │ │ │ ├── ContaService.java
-│ │ │ │ └── ContaVersionadaService.java
-│ │ │ ├── repository/
-│ │ │ │ ├── ContaRepository.java
-│ │ │ │ └── ContaVersionadaRepository.java
-│ │ │ ├── entity/
-│ │ │ │ ├── ContaBancaria.java
-│ │ │ │ └── ContaBancariaVersionada.java
-│ │ │ └── ConcorrenciaBancariaApplication.java
-│ │ └── resources/
-│ │ └── application.properties
+│ │   ├── java/
+│ │   │   └── com/
+│ │   │       └── example/
+│ │   │           └── bancaria/
+│ │   │               ├── controller/
+│ │   │               │   ├── ContaController.java
+│ │   │               │   └── ContaVersionadaController.java
+│ │   │               ├── service/
+│ │   │               │   ├── ContaService.java
+│ │   │               │   └── ContaVersionadaService.java
+│ │   │               ├── repository/
+│ │   │               │   ├── ContaRepository.java
+│ │   │               │   └── ContaVersionadaRepository.java
+│ │   │               ├── entity/
+│ │   │               │   ├── ContaBancaria.java
+│ │   │               │   └── ContaBancariaVersionada.java
+│ │   │                   └── ConcorrenciaBancariaApplication.java
+│ │   └── resources/
+│ │       └── application.properties
 │ └── test/
-│ └── ContaBancaria.jmx
-│ └── ContaBancariaVersionada.jmx
+│     └── ContaBancaria.jmx
+│     └── ContaBancariaVersionada.jmx
 ├── pom.xml
 └── teste-concorrencia.jmx
+```
 
 # 📊 Relatório de Conclusão e Análise Comparativa
 Para validar o comportamento do sistema sob concorrência, configuramos um plano de testes no Apache JMeter (``` teste-concorrencia.jmx ```) simulando 50 requisições simultâneas de depósito de R$ 10,00 em uma conta que inicia com o saldo de R$ 1.000,00.
