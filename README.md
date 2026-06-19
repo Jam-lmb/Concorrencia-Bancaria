@@ -2,8 +2,8 @@
 Este projeto tem como objetivo demonstrar na prática os problemas de concorrência em sistemas transacionais, especificamente o fenômeno do Lost Update (Atualização Perdida), e como resolvê-lo utilizando os recursos do JPA/Hibernate.
 
 # 👥 Integrantes e Divisão do Trabalho
-Aluno A: Jamile Barbosa - Responsável pela Parte 1: O Problema da Concorrência e o Cenário Sem Bloqueio.
-Aluno B: Welerson Sousa - Responsável pela Parte 2: A Solução com Controle de Versão Otimista (@Version).
+- Aluno A: Jamile Barbosa - Responsável pela Parte 1: O Problema da Concorrência e o Cenário Sem Bloqueio.
+- Aluno B: Welerson Sousa - Responsável pela Parte 2: A Solução com Controle de Versão Otimista (@Version).
 # 🚀 Instruções de Execução
 ## Pré-requisitos
 - Java JDK 17 ou superior instalado.
